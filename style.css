@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #091921;
+}
+.calculator {
+  position: relative;
+  display: grid;
+}
+.calculator .value {
+  grid-column: span 4;
+  height: 100px;
+  text-align: right;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+}
+.calculator span {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  background: #0c2835;
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.calculator span:active {
+  background: #74ff3b;
+  color: #111;
+}
+.calculator span.divide {
+  background: forestgreen;
+}
+.calculator span.divide:active {
+  background: #74ff3b;
+}
+.calculator span.clear {
+  grid-column: span 2;
+  width: 120px;
+  background: #ff3077;
+}
+.calculator span.clear:active {
+  background: #74ff3b;
+}
+.calculator span.plus {
+  grid-row: span 2;
+  height: 120px;
+  background: blueviolet;
+}
+.calculator span.plus:active {
+  background: #74ff3b;
+}
+.calculator span.num-equal {
+  background: #03b1ff;
+}
+.calculator span.num-equal:active {
+  background: #74ff3b;
+}
+.calculator span.minus {
+  background: tomato;
+}
+.calculator span.minus {
+  background: tomato;
+}
+.calculator span.minus:active {
+  background: #74ff3b;
+}
+.calculator span.multiple {
+  background: red;
+}
+
+.calculator span.multiple:active {
+  background: #74ff3b;
+}

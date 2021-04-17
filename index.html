@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class = "calculator" name = "calc">
+        <input type="text" class="value" value = "0" name = "txt" readonly="">
+        <span class="num clear" onclick="input('c')">c</span>
+        <span class="num divide" onclick="input('/')">/</span>
+        <span class="num multiple" onclick="input('*')">*</span>
+        <span class="num" onclick="input('7')">7</span>
+        <span class="num" onclick="input('8')">8</span>
+        <span class="num" onclick="input('9')">9</span>
+        <span class="num minus" onclick="input('-')">-</span>
+        <span class="num" onclick="input('4')">4</span>
+        <span class="num" onclick="input('5')">5</span>
+        <span class="num" onclick="input('6')">6</span>
+        <span class="num plus" onclick="input('+')">+</span>
+        <span class="num" onclick="input('1')">1</span>
+        <span class="num" onclick="input('2')">2</span>
+        <span class="num" onclick="input('3')">3</span>
+        <span class="num" onclick="input('0')">0</span>
+        <span class="num" onclick="input('00')">00</span>
+        <span class="num" onclick="input('.')">.</span>
+        <span class="num-equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+
+
+
+<script src="app.js"></script>
+    </form>
+</body>
+</html>
